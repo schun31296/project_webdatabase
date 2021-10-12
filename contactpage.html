@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width intitial-scale=1">
+        <title>The Balloonatic Asylum</title>
+        <link rel="stylesheet" href="stylecontact.css">
+        <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    </head>
+
+    <body>
+        <header>
+           <a id="logo" href="homepage.html">
+           <img src="ballonlogo.JPG" alt="Logo"> 
+           <title>The Balloonatic Asylum</title>
+           </a>  
+
+        
+            <nav class="active">
+                <ul>
+                   <li><a href="productpage.html">Products</a></li>
+                   <li><a href="aboutpage.html">About</a></li>
+                   <li><a href="contactpage.html">Contact Us</a></li>
+                </ul>
+            </nav> 
+            <script type="text/javascript">
+                const currentLocation = location.href;
+                const menuItem = document.querySelectorAll('a');
+                const menuLength = menuItem.length
+                for(Let i=0; i<menuLength; i++){
+                    if(menuItem[i].href === currentLocation){
+                        menuItem[i].className ="active"
+                    }
+                }
+
+            </script>   
+        </header>
+         
+        <main>
+            <nav class="main-nav-bar">
+                <ul>
+                    <li><a href="productpage.html">Birthday Bouquets</a></li>
+                    <li><a href="productpage.html">Balloony Occasions</a></li>
+                    <li><a href="productpage.html">Build a Balloon Bouquet</a></li>
+                    <li><a href="productpage.html">Decorating with Balloons</a></li>
+                    <li><a href="productpage.html">Balloons in Bulk</a></li>
+                </ul>
+            </nav>
+            <script type="text/javascript">
+                const currentLocation = location.href;
+                const menuItem = document.querySelectorAll('a');
+                const menuLength = menuItem.length
+                for(Let i=0; i<menuLength; i++){
+                   if(menuItem[i].href === currentLocation){
+                       menuItem[i].className ="main-nav-bar"
+                   }
+                }
+
+            </script>
+
+            <section class = "contact-section">
+				<div class="float-container">
+
+                <div class ="float-child contact-bg">
+                    <h2>contact us</h2>
+                    <div class='line'>
+                         <div></div>
+                    </div>
+                    <p class = "text">You have a couple of options on how to place the order. E-mail/call 
+                        to "Contact us" and to tell us some more about your upcoming event.
+                         We'd love to hear from you!.</p>
+                </div>
+                    
+                <div class = "float-child contact-body">
+                    <div class = "contact-info">
+                        <div>
+                            <span><i class = "fas fa-phone"></i></span>
+                            <span>Telephone Number</span>
+                            <span class = "text">1-203-203-2031</span>
+                        </div>
+                        <div>
+                            <span><i class="fas fa-envelope"></i></span>
+                            <span>E-mail</span>
+                            <span class = "text">email@gmail.com.com</span>
+                        </div>
+                        <div>
+                            <span><i class="fas fa-map-marker-alt"></i></span>
+                            <span>Address</span>
+                            <span class="text">14 Ricardo street, West Haven, CT 06516, United States</span>
+                        </div>
+                        <div>
+                            <span><i class="fas fa-clock"></i></span>
+                            <span>Opening Hours</span>
+                            <span class="text">Monday-Friday(9:00 AM to 5:00 PM)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <form>
+                            <div>
+                                <input type = "text" class = "text-box email_tb"
+                                placeholder="E-mail"  required>                            
+                            </div><br>
+                            <div>
+                           
+                                <input type = "Submit" class="send-btn sub_btn" value =
+                                    "Subscribe">
+                            </div>
+                            
+                        </form>
+                        
+
+                    </div>
+
+                </div> 
+               <div>
+            </section>
+
+        </main>
+
+        <footer>
+            <small><img src="ballonlogo.JPG">&#169 2021 Created by Ballonatic Asylum.</small>
+        </footer>
+
+
+    </body>
+
+</html> 
